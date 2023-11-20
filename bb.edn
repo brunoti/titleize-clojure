@@ -1,0 +1,7 @@
+{:tasks
+ {:requires ([babashka.fs :as fs])
+  clean (fs/delete-tree "out")
+  build (shell "npx shadow-cljs release code")
+  conjure (clojure "-M:repl/conjure")
+  test-clj (clojure "-X:test")
+  test-cljs (shell "npx shadow-cljs compile test")}}

@@ -1,0 +1,11 @@
+{:source-paths ["source" "test"]
+ :builds
+ {:test
+  {:target :node-test
+   :output-to "out/node-tests.js"
+   :ns-regexp "-test$"
+   :autorun true}
+  :code
+  {:target :node-library
+   :output-to "out/titleize.js"
+   :exports {:titleize excelsia.titleize/titleize}}}}

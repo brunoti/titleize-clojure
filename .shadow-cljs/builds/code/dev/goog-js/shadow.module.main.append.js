@@ -1,0 +1,1 @@
+["^ ","~:resource-id",["~:shadow.build.modules/append","~:main"],"~:source","\nshadow$umd$export = shadow.umd_helper.get_exports();\n","~:js","\nshadow$umd$export = shadow.umd_helper.get_exports();\n"]
